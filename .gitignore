@@ -1,0 +1,21 @@
+# 构建产物
+build/
+output/
+*.o
+*.elf
+*.bin
+*.a
+*.map
+*.lst
+.sconsign.dblite
+
+# Python
+*.pyc
+__pycache__/
+
+# IDE / 系统
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

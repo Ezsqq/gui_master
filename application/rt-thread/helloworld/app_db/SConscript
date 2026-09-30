@@ -1,0 +1,12 @@
+from building import *
+
+cwd = GetCurrentDir()
+# 自动包含本目录所有 .c 文件，后续加新文件不用改脚本
+src = Glob('*.c')
+# 把本目录加入头文件搜索路径
+CPPPATH = [cwd]
+
+# 定义编译组，无特殊依赖
+group = DefineGroup('app_db', src, depend = [], CPPPATH = CPPPATH)
+
+Return('group')
